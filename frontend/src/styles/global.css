@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body { @apply bg-dark-300 text-white font-body; overscroll-behavior: none; min-height: 100dvh; }
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { @apply bg-dark-500; }
+  ::-webkit-scrollbar-thumb { @apply bg-primary-500 rounded-full; }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-500 hover:bg-primary-600 text-white font-bold py-3 px-6 rounded-2xl 
+           transition-all duration-200 active:scale-95 shadow-neon 
+           disabled:opacity-50 disabled:cursor-not-allowed disabled:shadow-none;
+  }
+  .btn-secondary {
+    @apply bg-dark-500 hover:bg-dark-600 text-white font-bold py-3 px-6 rounded-2xl 
+           border border-white/10 transition-all duration-200 active:scale-95;
+  }
+  .card { @apply bg-dark-500 rounded-3xl border border-white/5 shadow-card; }
+  .card-hover { @apply card hover:shadow-card-hover hover:border-white/10 transition-all duration-300 cursor-pointer hover:-translate-y-1; }
+  .input-field {
+    @apply w-full bg-dark-500 border border-white/10 rounded-2xl px-4 py-3 text-white 
+           placeholder-white/30 focus:outline-none focus:border-primary-500 
+           transition-colors duration-200 font-body;
+  }
+  .gradient-text { @apply bg-gradient-to-r from-primary-400 to-accent-yellow bg-clip-text text-transparent; }
+  .xp-bar { @apply h-2 rounded-full bg-dark-600 overflow-hidden; }
+  .xp-fill { @apply h-full rounded-full bg-gradient-to-r from-primary-500 to-accent-yellow transition-all duration-700; }
+  .domain-card { @apply rounded-3xl p-5 cursor-pointer transition-all duration-300 border-2 hover:scale-105 active:scale-95; }
+  .streak-badge { @apply flex items-center gap-1.5 bg-orange-500/20 border border-orange-500/30 rounded-full px-3 py-1.5 text-orange-400 font-bold text-sm; }
+  .achievement-card { @apply bg-dark-500 rounded-2xl p-4 border border-white/5 flex items-center gap-3; }
+  .nav-item { @apply flex flex-col items-center gap-1 py-2 px-3 rounded-xl transition-all duration-200 text-white/40 hover:text-white/70; }
+  .nav-item.active { @apply text-primary-400; }
+}
+
+@layer utilities {
+  .safe-top { padding-top: env(safe-area-inset-top); }
+  .safe-bottom { padding-bottom: env(safe-area-inset-bottom); }
+  .glass { background: rgba(255,255,255,0.05); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.08); }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+}

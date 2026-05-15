@@ -1,0 +1,243 @@
+// Static knowledge cards for MVP (no AI needed)
+export const KNOWLEDGE_CARDS = {
+  science: [
+    {
+      id: 's1',
+      topic: 'Physics',
+      title: "Newton's Third Law",
+      content: "For every action, there is an equal and opposite reaction. This principle explains everything from rocket propulsion to why you feel pushed back when you push a wall.",
+      funFact: "🚀 Rockets work in the vacuum of space because they don't push against air — they push against their own exhaust gases!",
+      xp: 10,
+      difficulty: 'beginner',
+    },
+    {
+      id: 's2',
+      topic: 'Biology',
+      title: 'DNA Double Helix',
+      content: "DNA is a molecule that carries genetic instructions. Its famous double helix structure was discovered in 1953 by Watson and Crick using X-ray crystallography data from Rosalind Franklin.",
+      funFact: "🧬 If you stretched out all the DNA in one human cell, it would be about 2 meters long — yet it fits inside a nucleus 6 micrometers wide!",
+      xp: 10,
+      difficulty: 'beginner',
+    },
+    {
+      id: 's3',
+      topic: 'Astronomy',
+      title: 'Black Holes',
+      content: "A black hole is a region of spacetime where gravity is so strong that nothing — not even light — can escape from it. They form when massive stars collapse at the end of their lifecycle.",
+      funFact: "⚫ The nearest black hole to Earth is about 1,000 light-years away in the constellation Telescopium.",
+      xp: 15,
+      difficulty: 'intermediate',
+    },
+    {
+      id: 's4',
+      topic: 'Chemistry',
+      title: 'The Periodic Table',
+      content: "Dmitri Mendeleev arranged elements by atomic weight and chemical properties in 1869. He left gaps for undiscovered elements — and was proved right when those elements were later found.",
+      funFact: "⚗️ The most abundant element in the universe is Hydrogen, making up about 75% of all normal matter!",
+      xp: 10,
+      difficulty: 'beginner',
+    },
+  ],
+  philosophy: [
+    {
+      id: 'p1',
+      topic: 'Stoicism',
+      title: "The Dichotomy of Control",
+      content: "Epictetus taught that we should focus only on what we can control — our thoughts, judgments, desires — and accept what we cannot control. This is the foundation of Stoic practice.",
+      funFact: "🏛️ Epictetus was born a slave. His philosophy of inner freedom became one of history's most influential schools of thought.",
+      xp: 10,
+      difficulty: 'beginner',
+    },
+    {
+      id: 'p2',
+      topic: 'Logic',
+      title: 'Socratic Method',
+      content: "Socrates developed a method of questioning to expose contradictions in beliefs and stimulate critical thinking. Rather than lecturing, he asked probing questions to help others discover truth themselves.",
+      funFact: "💬 Socrates never wrote anything down. Everything we know about him comes from his students, mainly Plato.",
+      xp: 10,
+      difficulty: 'beginner',
+    },
+    {
+      id: 'p3',
+      topic: 'Ethics',
+      title: "Kant's Categorical Imperative",
+      content: "Immanuel Kant proposed a universal moral law: 'Act only according to that maxim whereby you can at the same time will that it should become a universal law.' If lying were universal, trust would collapse.",
+      funFact: "📚 Kant was so punctual that neighbors reportedly set their clocks by his daily walks — until he got lost reading Rousseau.",
+      xp: 15,
+      difficulty: 'intermediate',
+    },
+  ],
+  history: [
+    {
+      id: 'h1',
+      topic: 'Ancient Civilizations',
+      title: 'The Library of Alexandria',
+      content: "The Great Library of Alexandria in Egypt was the largest library of the ancient world, containing hundreds of thousands of scrolls. It represented humanity's first major attempt to gather all human knowledge in one place.",
+      funFact: "📚 The library didn't burn in one dramatic fire — it declined gradually over centuries through funding cuts, wars, and neglect.",
+      xp: 10,
+      difficulty: 'beginner',
+    },
+    {
+      id: 'h2',
+      topic: 'Modern Era',
+      title: 'The Printing Press Revolution',
+      content: "Gutenberg's printing press (c. 1440) democratized knowledge by making books affordable. Within 50 years, over 20 million books were printed across Europe, triggering the Renaissance, Reformation, and Scientific Revolution.",
+      funFact: "🖨️ Before the printing press, a single book could cost as much as a house — only the wealthy and clergy had access to written knowledge.",
+      xp: 10,
+      difficulty: 'beginner',
+    },
+  ],
+  technology: [
+    {
+      id: 't1',
+      topic: 'Computer Science',
+      title: "Alan Turing & The Computer",
+      content: "Alan Turing conceived the theoretical basis for modern computers in 1936 with his 'Turing Machine' concept. He showed that any computable problem could be solved by a simple machine following instructions.",
+      funFact: "💻 Turing also cracked the Nazi Enigma cipher during WWII, estimated to have shortened the war by 2-4 years.",
+      xp: 10,
+      difficulty: 'beginner',
+    },
+    {
+      id: 't2',
+      topic: 'Artificial Intelligence',
+      title: 'Neural Networks',
+      content: "Artificial neural networks are inspired by the human brain. They consist of layers of nodes that process data and adjust their connections based on errors, gradually learning to recognize patterns.",
+      funFact: "🤖 The term 'Artificial Intelligence' was coined in 1956 at the Dartmouth Conference — researchers thought it would take just one summer to solve!",
+      xp: 15,
+      difficulty: 'intermediate',
+    },
+  ],
+  mathematics: [
+    {
+      id: 'm1',
+      topic: 'Number Theory',
+      title: "Euler's Identity",
+      content: "e^(iπ) + 1 = 0 — considered the most beautiful equation in mathematics. It connects five fundamental constants: e (natural log base), i (imaginary unit), π (pi), 1, and 0 in one elegant formula.",
+      funFact: "∞ Richard Feynman called this equation 'the most remarkable formula in mathematics' — it links algebra, geometry, and calculus in one expression.",
+      xp: 20,
+      difficulty: 'advanced',
+    },
+    {
+      id: 'm2',
+      topic: 'Statistics',
+      title: 'The Central Limit Theorem',
+      content: "When you take many random samples from any population, the distribution of sample means approaches a normal (bell) curve — regardless of the original distribution. This underpins modern statistics.",
+      funFact: "📊 This theorem is why polling works. Even with millions of voters, a sample of ~1,000 can predict outcomes with high accuracy.",
+      xp: 15,
+      difficulty: 'intermediate',
+    },
+  ],
+  arts: [
+    {
+      id: 'a1',
+      topic: 'Music Theory',
+      title: 'The Circle of Fifths',
+      content: "The circle of fifths is a visual representation of musical keys arranged so adjacent keys share 6 of 7 notes. It's a fundamental tool for understanding harmony, chord progressions, and key changes.",
+      funFact: "🎵 Almost every pop song uses chord progressions that appear right next to each other on the circle of fifths!",
+      xp: 15,
+      difficulty: 'intermediate',
+    },
+  ],
+  economics: [
+    {
+      id: 'e1',
+      topic: 'Macroeconomics',
+      title: 'Supply and Demand',
+      content: "When supply of a good increases (or demand decreases), its price falls. When supply decreases (or demand increases), price rises. This simple model explains price formation in free markets.",
+      funFact: "💰 During WWII, nylon stockings became so scarce that women drew lines on their legs with eyebrow pencils to simulate the appearance of stocking seams!",
+      xp: 10,
+      difficulty: 'beginner',
+    },
+  ],
+  psychology: [
+    {
+      id: 'ps1',
+      topic: 'Cognitive Psychology',
+      title: 'Cognitive Biases',
+      content: "Cognitive biases are systematic errors in thinking that affect decisions. Confirmation bias makes us seek information that confirms our existing beliefs. Availability bias makes us overweight recent or vivid memories.",
+      funFact: "🧠 We have over 180 documented cognitive biases. Even experts in psychology consistently fall prey to them!",
+      xp: 10,
+      difficulty: 'beginner',
+    },
+  ],
+  linguistics: [
+    {
+      id: 'l1',
+      topic: 'Language Acquisition',
+      title: "Chomsky's Universal Grammar",
+      content: "Noam Chomsky proposed that humans are born with an innate language acquisition device — a built-in ability to learn any human language. This explains why children universally acquire language in the same stages.",
+      funFact: "🗣️ Children learn language so efficiently that they regularly create grammatically correct sentences they've never heard before — called 'generativity'.",
+      xp: 15,
+      difficulty: 'intermediate',
+    },
+  ],
+  geography: [
+    {
+      id: 'g1',
+      topic: 'Geopolitics',
+      title: 'The Heartland Theory',
+      content: "Sir Halford Mackinder (1904) proposed that whoever controls the Eurasian 'heartland' controls the world. This theory influenced 20th century geopolitics and Cold War strategy.",
+      funFact: "🌍 Over 70% of the world's population and most of the world's resources are located in Eurasia — making it the most geopolitically important landmass.",
+      xp: 15,
+      difficulty: 'intermediate',
+    },
+  ],
+}
+
+export const LEARNING_PATHS = {
+  science: [
+    { id: 'sp1', title: 'Foundations of Physics', lessons: 8, xp: 120, difficulty: 'beginner' },
+    { id: 'sp2', title: 'The Living Cell', lessons: 6, xp: 90, difficulty: 'beginner' },
+    { id: 'sp3', title: 'Chemistry Essentials', lessons: 10, xp: 150, difficulty: 'intermediate' },
+    { id: 'sp4', title: 'Cosmos & Beyond', lessons: 7, xp: 105, difficulty: 'advanced' },
+  ],
+  philosophy: [
+    { id: 'pp1', title: 'Stoicism in Practice', lessons: 6, xp: 90, difficulty: 'beginner' },
+    { id: 'pp2', title: 'Logic & Critical Thinking', lessons: 8, xp: 120, difficulty: 'intermediate' },
+    { id: 'pp3', title: 'Ethics Through the Ages', lessons: 9, xp: 135, difficulty: 'advanced' },
+  ],
+  history: [
+    { id: 'hp1', title: 'Ancient Civilizations', lessons: 10, xp: 150, difficulty: 'beginner' },
+    { id: 'hp2', title: 'The Modern World', lessons: 8, xp: 120, difficulty: 'intermediate' },
+  ],
+  technology: [
+    { id: 'tp1', title: 'How Computers Work', lessons: 7, xp: 105, difficulty: 'beginner' },
+    { id: 'tp2', title: 'The Internet & Web', lessons: 6, xp: 90, difficulty: 'intermediate' },
+    { id: 'tp3', title: 'AI Fundamentals', lessons: 9, xp: 135, difficulty: 'advanced' },
+  ],
+  mathematics: [
+    { id: 'mp1', title: 'Algebra Foundations', lessons: 8, xp: 120, difficulty: 'beginner' },
+    { id: 'mp2', title: 'Calculus Intuition', lessons: 10, xp: 150, difficulty: 'intermediate' },
+  ],
+  arts: [
+    { id: 'ap1', title: 'Music Theory Basics', lessons: 7, xp: 105, difficulty: 'beginner' },
+    { id: 'ap2', title: 'Art History Timeline', lessons: 8, xp: 120, difficulty: 'beginner' },
+  ],
+  economics: [
+    { id: 'ep1', title: 'How Markets Work', lessons: 6, xp: 90, difficulty: 'beginner' },
+    { id: 'ep2', title: 'Personal Finance 101', lessons: 5, xp: 75, difficulty: 'beginner' },
+  ],
+  psychology: [
+    { id: 'psp1', title: 'Understanding Your Mind', lessons: 7, xp: 105, difficulty: 'beginner' },
+    { id: 'psp2', title: 'Social Psychology', lessons: 6, xp: 90, difficulty: 'intermediate' },
+  ],
+  linguistics: [
+    { id: 'lp1', title: 'How Language Works', lessons: 6, xp: 90, difficulty: 'beginner' },
+  ],
+  geography: [
+    { id: 'gp1', title: 'World Geography', lessons: 8, xp: 120, difficulty: 'beginner' },
+  ],
+}
+
+export const ACHIEVEMENTS = [
+  { id: 'first_card', title: 'First Step', emoji: '👶', description: 'Complete your first knowledge card', xp: 50 },
+  { id: 'streak_3', title: 'On Fire', emoji: '🔥', description: 'Maintain a 3-day streak', xp: 75 },
+  { id: 'streak_7', title: 'Week Warrior', emoji: '⚔️', description: 'Maintain a 7-day streak', xp: 150 },
+  { id: 'streak_30', title: 'Monthly Master', emoji: '👑', description: 'Maintain a 30-day streak', xp: 500 },
+  { id: 'multi_domain', title: 'Polymath Rising', emoji: '🌟', description: 'Learn in 3 different domains', xp: 100 },
+  { id: 'level_5', title: 'Level 5 Scholar', emoji: '📚', description: 'Reach level 5', xp: 100 },
+  { id: 'level_10', title: 'Level 10 Sage', emoji: '🧙', description: 'Reach level 10', xp: 250 },
+  { id: 'path_complete', title: 'Path Pioneer', emoji: '🗺️', description: 'Complete a full learning path', xp: 200 },
+  { id: 'xp_1000', title: 'Knowledge Seeker', emoji: '💎', description: 'Earn 1000 total XP', xp: 100 },
+  { id: 'xp_5000', title: 'Wisdom Keeper', emoji: '🏆', description: 'Earn 5000 total XP', xp: 500 },
+]
