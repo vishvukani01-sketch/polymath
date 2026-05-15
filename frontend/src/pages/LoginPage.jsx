@@ -27,7 +27,7 @@ export default function LoginPage() {
   const handleGoogleLogin = async () => {
     const { error } = await supabase.auth.signInWithOAuth({
       provider: 'google',
-      options: { redirectTo: `${window.location.origin}/dashboard` }
+      options: { redirectTo: `https://polymath-pi.vercel,app/dashboard` }
     })
     if (error) toast.error(error.message)
   }
